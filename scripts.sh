@@ -12,3 +12,6 @@ docker run -d -e POSTGRES_PASSWORD= -e POSTGRES_USER= -e POSTGRES_DB= -p 5432:54
 
 # Git diffs (e.g., two commits back on specific file)
 git diff HEAD~2 HEAD -- main.c
+
+# AWS S3
+aws s3 cp ~/file s3://samual-bucket/folder/
