@@ -16,3 +16,9 @@ git diff HEAD~2 HEAD -- main.c
 # AWS S3
 aws s3 cp ~/file s3://samual-bucket/folder/
 aws s3 sync ~/target s3://samual-bucket
+
+# Bash loops and CF
+for i in {1..5}
+do
+   echo "Hello ${i}"
+done
