@@ -22,3 +22,11 @@ for i in {1..5}
 do
    echo "Hello ${i}"
 done
+
+# Return code check
+some_command
+if [ $? -eq 0 ]; then
+    echo OK
+else
+    echo FAIL
+fi
