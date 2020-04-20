@@ -33,3 +33,6 @@ fi
 
 # To run a specific test in Gradle
 ./gradlew :pleo-ymir-api:cleanTest :pleo-ymir-api:test --tests "io.pleo.ymir.models.ThreeDSecureVersionTest"
+
+# JQ magic
+cat resp.json | jq -r '.access_token as $token | "export VIIA_ACCESS_TOKEN=\($token)"'
