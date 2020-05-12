@@ -36,3 +36,6 @@ fi
 
 # JQ magic
 cat resp.json | jq -r '.access_token as $token | "export VIIA_ACCESS_TOKEN=\($token)"'
+
+# Ironic
+history -d $((HISTCMD-2))
