@@ -39,3 +39,13 @@ cat resp.json | jq -r '.access_token as $token | "export VIIA_ACCESS_TOKEN=\($to
 
 # Ironic
 history -d $((HISTCMD-2))
+
+# Dropwizard
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
