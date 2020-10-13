@@ -49,3 +49,8 @@ server:
     - type: http
       port: 8081
 
+# Postgres jsonb
+SELECT info->>'name'
+FROM rabbits
+WHERE info->'food' @> '"carrots"';
+
