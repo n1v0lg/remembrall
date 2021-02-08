@@ -54,3 +54,9 @@ SELECT info->>'name'
 FROM rabbits
 WHERE info->'food' @> '"carrots"';
 
+# Postgres filter by date
+select * from cupid_walletload w
+  where w.created_at >= '2021-01-28 00:00:00' 
+  and w.created_at < '2021-02-09 00:00:00'
+  order by w.created_at desc
+
