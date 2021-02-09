@@ -60,3 +60,5 @@ select * from cupid_walletload w
   and w.created_at < '2021-02-09 00:00:00'
   order by w.created_at desc
 
+# UTC Instant
+"2021-02-09T14:42:57.960Z"
