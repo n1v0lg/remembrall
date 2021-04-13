@@ -62,3 +62,7 @@ select * from cupid_walletload w
 
 # UTC Instant
 "2021-02-09T14:42:57.960Z"
+
+# Auth header
+echo -n user:password | base64
+
