@@ -66,3 +66,5 @@ select * from cupid_walletload w
 # Auth header
 echo -n user:password | base64
 
+# Random alphanum for osx
+RANDO=$(env LC_CTYPE=C LC_ALL=C tr -dc "a-zA-Z0-9" < /dev/urandom | head -c 10; echo)
