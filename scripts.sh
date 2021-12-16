@@ -71,3 +71,5 @@ RANDO=$(env LC_CTYPE=C LC_ALL=C tr -dc "a-zA-Z0-9" < /dev/urandom | head -c 10; 
 
 # BQ SQL timestamp today
 cast (t.timestamp as date) = CURRENT_DATE()
+
+uuidgen | tr '[:upper:]' '[:lower:]'
